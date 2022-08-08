@@ -28,7 +28,7 @@ public class ShipmentController {
                 HttpStatus.OK);
     }
 
-    @GetMapping("find-by-id/{id}")
+    @GetMapping("find-by-id/{nameShipment}")
     public ResponseEntity<RestResponse<List<ShipmentGridDTO>>> findShipmentById(String nameShipment) {
         return new ResponseEntity<>(
                 new RestResponse<>(shipmentService.findShipmentByName(nameShipment),
@@ -49,7 +49,7 @@ public class ShipmentController {
 
     }
 
-    @PutMapping("update/{id}")
+    @PutMapping("update/{nameShipment}")
     public ResponseEntity<RestResponse> updateShipment(@PathVariable String nameShipment,@RequestBody UpsertShipmentDTO shipmentUpdateDTO) {
         return new ResponseEntity(
                 new RestResponse(shipmentService.updateShipment(nameShipment, shipmentUpdateDTO),
@@ -59,7 +59,7 @@ public class ShipmentController {
 
     }
 
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("delete/{nameShipment}")
     public ResponseEntity<RestResponse> deleteShipment(@PathVariable String nameShipment) {
         return new ResponseEntity(
                 new RestResponse(shipmentService.deleteShipment(nameShipment),
