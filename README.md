@@ -83,7 +83,7 @@ dengan 4 tabel yang digunakan ,diantara nya Tabel Product,Shipment,Purchase,Buye
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/buyer/find-all
+URL: {{base_url}}/api/buyer/get?page=1
 ```
 
 
@@ -97,7 +97,7 @@ URL: {{base_url}}/buyer/find-all
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/buyer/find-by-id/2
+URL: {{base_url}}/api/buyer/find-by-id/2
 ```
 
 
@@ -111,7 +111,7 @@ URL: {{base_url}}/buyer/find-by-id/2
 ```bash
 Method: POST
 Type: RAW
-URL: {{base_url}}/buyer/insert
+URL: {{base_url}}/api/buyer/insert
 ```
 
 
@@ -139,7 +139,7 @@ URL: {{base_url}}/buyer/insert
 ```bash
 Method: PUT
 Type: RAW
-URL: {{base_url}}/buyer/1
+URL: {{base_url}}/api/buyer/update/1
 ```
 
 
@@ -170,7 +170,7 @@ URL: {{base_url}}/buyer/1
 ```bash
 Method: DELETE
 Type: 
-URL: {{base_url}}/buyer/6
+URL: {{base_url}}/api/buyer/6
 ```
 
 
@@ -188,7 +188,7 @@ URL: {{base_url}}/buyer/6
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/shipment/getAll
+URL: {{base_url}}/api/shipment/get?page=1
 ```
 
 
@@ -202,7 +202,7 @@ URL: {{base_url}}/shipment/getAll
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/shipment/find-by-name/J&T
+URL: {{base_url}}/api/shipment/find-by-name/J&T
 ```
 
 
@@ -216,7 +216,7 @@ URL: {{base_url}}/shipment/find-by-name/J&T
 ```bash
 Method: POST
 Type: RAW
-URL: {{base_url}}/shipment/insert
+URL: {{base_url}}/api/shipment/insert
 ```
 
 
@@ -243,7 +243,7 @@ URL: {{base_url}}/shipment/insert
 ```bash
 Method: PUT
 Type: RAW
-URL: {{base_url}}/shipment/update/Gosend
+URL: {{base_url}}/api/shipment/update/Gosend
 ```
 
 
@@ -269,7 +269,7 @@ URL: {{base_url}}/shipment/update/Gosend
 ```bash
 Method: DELETE
 Type: 
-URL: {{base_url}}/shipment/delete/WWWsW
+URL: {{base_url}}/api/shipment/delete/WWWsW
 ```
 
 
@@ -287,7 +287,7 @@ URL: {{base_url}}/shipment/delete/WWWsW
 ```bash
 Method: POST
 Type: RAW
-URL: {{base_url}}/purchase/insert
+URL: {{base_url}}/api/purchase/insert
 ```
 
 
@@ -315,7 +315,7 @@ URL: {{base_url}}/purchase/insert
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/purchase/getAll
+URL: {{base_url}}/api/purchase/getAll
 ```
 
 
@@ -329,7 +329,7 @@ URL: {{base_url}}/purchase/getAll
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/purchase/findByPurchaseDate/11-June-2022
+URL: {{base_url}}/api/purchase/findByPurchaseDate/11-June-2022
 ```
 
 
@@ -343,7 +343,7 @@ URL: {{base_url}}/purchase/findByPurchaseDate/11-June-2022
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/purchase/findPurchaseByBuyerId/8
+URL: {{base_url}}/api/purchase/findPurchaseByBuyerId/8
 ```
 
 
@@ -357,7 +357,7 @@ URL: {{base_url}}/purchase/findPurchaseByBuyerId/8
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/purchase/findPurchaseByCategoryProduct/Laptops
+URL: {{base_url}}/api/purchase/findPurchaseByCategoryProduct/Laptops
 ```
 
 
@@ -371,7 +371,7 @@ URL: {{base_url}}/purchase/findPurchaseByCategoryProduct/Laptops
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/purchase/findPurchaseByShipment/WWWSW
+URL: {{base_url}}/api/purchase/findPurchaseByShipment/WWWSW
 ```
 
 
@@ -385,7 +385,7 @@ URL: {{base_url}}/purchase/findPurchaseByShipment/WWWSW
 ```bash
 Method: DELETE
 Type: 
-URL: {{base_url}}/purchase/delete/B002
+URL: {{base_url}}/api/purchase/delete/B002
 ```
 
 
@@ -399,7 +399,7 @@ URL: {{base_url}}/purchase/delete/B002
 ```bash
 Method: PUT
 Type: RAW
-URL: {{base_url}}/purchase/update/B002
+URL: {{base_url}}/api/purchase/update/B002
 ```
 
 
@@ -427,7 +427,7 @@ URL: {{base_url}}/purchase/update/B002
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/purchase/findPurchaseByPurchaseId/P001
+URL: {{base_url}}/api/purchase/findPurchaseByPurchaseId/P001
 ```
 
 
@@ -445,7 +445,7 @@ URL: {{base_url}}/purchase/findPurchaseByPurchaseId/P001
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/product/find-all
+URL: {{base_url}}/api/product/get?page=1
 ```
 
 
@@ -459,7 +459,7 @@ URL: {{base_url}}/product/find-all
 ```bash
 Method: POST
 Type: RAW
-URL: {{base_url}}/product/insert
+URL: {{base_url}}/api/product/insert
 ```
 
 
@@ -488,7 +488,7 @@ URL: {{base_url}}/product/insert
 ```bash
 Method: PUT
 Type: RAW
-URL: {{base_url}}/product/LLL001
+URL: {{base_url}}/api/product/update/LLL001
 ```
 
 
@@ -513,7 +513,7 @@ URL: {{base_url}}/product/LLL001
 ```bash
 Method: DELETE
 Type: 
-URL: {{base_url}}/product/LLL001sdd
+URL: {{base_url}}/api/product/delete/LLL001sdd
 ```
 
 
@@ -527,7 +527,7 @@ URL: {{base_url}}/product/LLL001sdd
 ```bash
 Method: GET
 Type: 
-URL: {{base_url}}/product/find-by-id/M001
+URL: {{base_url}}/api/product/find-by-id/M001
 ```
 
 
